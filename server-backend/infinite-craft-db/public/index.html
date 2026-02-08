@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Infinite Craft DB</title>
+    <style>
+        body { font-family: sans-serif; background: #1a1a1a; color: white; text-align: center; }
+        .list { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 20px; }
+        .item { background: #333; padding: 10px; border-radius: 5px; border: 1px solid #555; }
+        .first { border-color: gold; color: gold; }
+    </style>
+</head>
+<body>
+    <h1>Base de Données Infinite Craft</h1>
+    <div id="elements" class="list">Chargement des découvertes...</div>
+
+    <script>
+        // On récupère les données depuis notre propre API
+        async function loadData() {
+            // On créera une route /api/elements plus tard pour ça
+            document.getElementById('elements').innerText = "Bientôt : La liste des combinaisons ici !";
+        }
+        loadData();
+    </script>
+</body>
+</html>

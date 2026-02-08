@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Infinite Craft Data Extractor",
+  "version": "1.0",
+  "description": "Exporte tes découvertes Infinite Craft vers ma base de données.",
+  "permissions": ["storage", "activeTab"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "infinite-extractor@monsite.com"
+    }
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://neal.fun/infinite-craft/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
